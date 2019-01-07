@@ -1,0 +1,23 @@
+.servicesVisas {
+  height: auto;
+  display: grid;
+  grid-template-columns: 0.125fr 1fr 0.125fr;
+  grid-template-rows: 1fr;
+}
+
+.cardsVisas {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/* .cardVisas {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+} */

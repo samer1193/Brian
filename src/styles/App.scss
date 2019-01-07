@@ -1,0 +1,223 @@
+html,
+body {
+  width: 100%;
+  height: fit-content;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: 100vh 80vh auto-fit 70vh 1fr 15vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .App {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .App {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.line {
+  height: 3px;
+  width: 350px;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.line-medium {
+  height: 3px;
+  width: 200px;
+  background: #8c001acc;
+  margin-bottom: 10px;
+}
+
+.line-medium-white {
+  height: 3px;
+  width: 200px;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.line-small {
+  height: 3px;
+  width: 100px;
+  background: #8c001acc;
+  margin-bottom: 10px;
+}
+
+.primary {
+  fill: #8c001acc;
+}
+
+.secondary {
+  fill: #ffd8cf;
+}
+
+.sectionLast {
+  height: auto;
+  display: grid;
+  grid-template-columns: 0.125fr 1fr 0.125fr;
+  grid-template-rows: 0.1fr 0.8fr 0.1fr;
+  margin-top: 24px;
+}
+
+.cardLast {
+  /* grid-row: 2 / 3; */
+  grid-column: 2 / 3;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+  /* height: 100%;
+  width: 100%; */
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  background-color: #fff7f7;
+}
+
+.hdrLast {
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
+  justify-self: center;
+  background-color: rgba(140, 0, 26, 0.5);
+  font-family: "Libre Baskerville", serif;
+  font-weight: Normal;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.descrLast {
+  grid-row: 2 / 2;
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+}
+
+.sectionLastCrimDefense {
+  display: grid;
+  grid-template-columns: 0.125fr 1fr 0.125fr;
+  margin-bottom: 24px;
+}
+
+.cardLastCrimDefense {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  background-color: #fff7f7;
+}
+
+/* Felony custom css */
+.sectionLastFelony {
+  display: grid;
+  grid-template-columns: 0.125fr 1fr 0.125fr;
+  margin-bottom: 24px;
+}
+
+.cardLastFelony {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  background-color: #fff7f7;
+}
+
+/* DUI Custom CSS */
+.sectionLastDUI {
+  max-height: 90vh;
+  display: grid;
+  grid-template-columns: 0.125fr 1fr 0.125fr;
+  grid-template-rows: 0.1fr 0.8fr 0.1fr;
+}
+
+.cardLastDUI {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.1fr 0.4fr 0.1fr 0.2fr 0.2fr;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.hdrLastDUI1 {
+  grid-column: 1 / -1;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  grid-row: 1 / 1;
+  justify-self: center;
+  width: 100%;
+  background-color: rgba(140, 0, 26, 0.5);
+  font-family: "Libre Baskerville", serif;
+  font-weight: Normal;
+}
+.hdrLastDUI2 {
+  grid-column: 1 / -1;
+  grid-row: 3 / 3;
+  text-align: center;
+  justify-self: center;
+  width: 100%;
+  background-color: rgba(140, 0, 26, 0.5);
+  font-family: "Libre Baskerville", serif;
+  font-weight: Normal;
+}
+
+.descrLastDUI1 {
+  grid-row: 2 / 2;
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: initial;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #fff7f7;
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+}
+.descrLastDUI2 {
+  grid-row: 4 / 4;
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: initial;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #fff7f7;
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+}
+.descrLastDUI3 {
+  grid-row: 5 / 5;
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: initial;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #fff7f7;
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+}

@@ -1,0 +1,15 @@
+.servicesEmployment {
+  height: auto;
+  display: grid;
+  grid-template-columns: 0.125fr 1fr 0.125fr;
+  grid-template-rows: 1fr;
+}
+
+.cardsEmployment {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+}

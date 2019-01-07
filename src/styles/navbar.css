@@ -1,0 +1,39 @@
+.navbar {
+  background-color: transparent;
+}
+.top-nav-collapse {
+  background-color: #8c001acc;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #8c001acc;
+  }
+}
+
+.NavLink {
+  outline: none;
+  color: #8c001acc;
+}
+
+.logo {
+  height: 35px;
+  width: 375px;
+}
+
+.navbtn {
+  color: #8c001acc;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../imgs/iconfinder_menu-alt_134216.svg) !important;
+  color: red !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    height: 25px;
+    width: 210px;
+  }
+}
